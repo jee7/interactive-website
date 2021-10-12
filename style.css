@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+section, #section1 div { 
+    padding: 15px;
+	/** Just a global .div style broke the map infoboxes! **/
+}
+#section2 div {
+	padding: 5px;
+}
+
+hr {
+    padding-top: 20px;
+}
+
+h3 { 
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    margin: 2px;    
+}
+
+.box {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+p, label, form {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    margin: 2px;
+}
+
+#form {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-field label {
+  display: inline-block;
+  width: 115px;
+  text-align: right;
+}
+
+#dropdown {
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.hind {
+    float: right;
+}
+
+#calc {
+    margin-left: 25px;
+}
+
+#delivery {
+	font-size: 3em;
+	width: 3.5em;
+	text-align: right;
+}
+
+.clocks {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.clock {
+	margin: 15px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /*font-family: 'PT Serif', serif;*/
+	/* Use monospace font to avoid all the clock numbers visually popping around when some of them change */
+	font-family: monospace;
+    letter-spacing: 3px;
+	color: red;
+}
+
+
+/** siin on minu looming **/
+/**
+ * Sain ülesandest aru, et need raadionupud tuleb kujundada. Tegin selekteeritud valiku boldi ja üritasin tsentreerida raadionupu nupu osa 
+ * Ülejäänud vorm mulle tegelikult enam-vähem meeldib sellisena nagu ta praegu on.
+ **/
+
+input[type=radio] {
+  margin-bottom: 4px;
+}
+
+input[type=radio]:checked ~ span {
+  font-weight: bold;
+  display: inline-block;
+  width: 10em;
+}
+
+label {
+	white-space: nowrap;
+}
+
+/** Kaardi jaoks **/
+
+.map-image {
+	height: 60px;
+}
+
+.infobox-title {
+	white-space: nowrap;
+}
+
+ /** minu looming - Lõpp */
+
+
+input[type=submit] {
+    background-color: #008000;
+    color: #FFF;
+    border-radius: 15px;
+    border: none;
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#map {
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}
